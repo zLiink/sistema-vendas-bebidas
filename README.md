@@ -3,7 +3,7 @@
 ## Status do Projeto
   Em desenvolvimento
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - Java
 - Spring Boot
 - Spring Data JPA
