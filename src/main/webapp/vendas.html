@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Vendas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacoes.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Vendas</h1>
+
+    <form id="form-venda" onsubmit="return validarVenda()">
+        <p>
+            <label>Produto:</label><br>
+            <input type="text" id="produtoVenda" required>
+        </p>
+        <p>
+            <label>Cliente:</label><br>
+            <input type="text" id="clienteVenda" required>
+        </p>
+        <p>
+            <label>Motoboy:</label><br>
+            <input type="text" id="motoboyVenda" required>
+        </p>
+        <p>
+            <label>Valor Total (R$):</label><br>
+            <input type="number" step="0.01" id="valorVenda" required>
+        </p>
+        <p>
+            <label>Data da Venda:</label><br>
+            <input type="date" id="dataVenda" required>
+        </p>
+        <p>
+            <button type="submit">Registrar Venda</button>
+        </p>
+    </form>
+
+    <a href="index.html">Voltar ao menu</a>
+</body>
+</html>

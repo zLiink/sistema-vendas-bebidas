@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Motoboys</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacoes.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Motoboys</h1>
+
+    <form id="form-motoboy" onsubmit="return validarMotoboy()">
+        <p>
+            <label>Nome completo:</label><br>
+            <input type="text" id="nomeMotoboy" required>
+        </p>
+        <p>
+            <label>Telefone:</label><br>
+            <input type="text" id="telefoneMotoboy" placeholder="(99) 99999-9999" required>
+        </p>
+        <p>
+            <label>Placa da moto:</label><br>
+            <input type="text" id="placaMoto" placeholder="ABC-1234" required>
+        </p>
+        <p>
+            <button type="submit">Cadastrar</button>
+        </p>
+    </form>
+
+    <a href="index.html">Voltar ao menu</a>
+</body>
+</html>

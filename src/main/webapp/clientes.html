@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacoes.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+
+    <form id="form-cliente" onsubmit="return validarCliente()">
+        <p>
+            <label>Nome completo:</label><br>
+            <input type="text" id="nomeCliente" required>
+        </p>
+        <p>
+            <label>Telefone:</label><br>
+            <input type="text" id="telefoneCliente" placeholder="(99) 99999-9999" required>
+        </p>
+        <p>
+            <label>Endereço:</label><br>
+            <input type="text" id="enderecoCliente" required>
+        </p>
+        <p>
+            <button type="submit">Cadastrar</button>
+        </p>
+    </form>
+
+    <a href="index.html">Voltar ao menu</a>
+</body>
+</html>
